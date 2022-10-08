@@ -1,6 +1,6 @@
-package abominableFramework;
+package libraries.abominableFramework;
 
-import CSVPersistanceLayer.CSVManager;
+import libraries.CSVManager;
 
 public abstract class Model extends Publisher {
 
@@ -29,6 +29,10 @@ public abstract class Model extends Publisher {
 	public Model[] getAll() {
 		Model[] result = persistenceManager.getAll(this);
 		return result;
+	}
+
+	public static void setDataBaseLocation(String dataBaseLocation) {
+		persistenceManager.setRoot(dataBaseLocation);
 	}
 
 }

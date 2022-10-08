@@ -1,4 +1,4 @@
-package abominableFramework;
+package libraries.abominableFramework;
 
 public abstract class Controller implements Subscriber {
 	protected Publisher model;

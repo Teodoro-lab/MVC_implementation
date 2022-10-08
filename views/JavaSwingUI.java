@@ -1,12 +1,15 @@
 package views;
 
+import java.io.IOException;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import org.jfree.chart.ChartPanel;
+import org.json.simple.parser.ParseException;
 
-import abominableFramework.View;
 import controllers.CandidatoController;
+import libraries.abominableFramework.View;
 import models.CandidatoDao;
 
 public class JavaSwingUI extends JFrame implements View {
@@ -25,7 +28,11 @@ public class JavaSwingUI extends JFrame implements View {
     }
 
     public void sendNewVoteToCandidate(String candidate) {
-        candidatoController.increaseVotosCanditado(candidate);
+        try {
+            candidatoController.increaseVotosCanditado(candidate);
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     public void createCharts() {

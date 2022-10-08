@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"name": "MVC",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar",
+			"libraries/commons-csv-1.9.0.jar",
+			"libraries/jfreechart-1.0.19.jar",
+			"libraries/jcommon-1.0.23.jar",
+			"libraries/forwarderReceiver/libraries/json-simple-1.1.1.jar",
+			"libraries/forwarderReceiver.jar"
+		]
+	}
+}

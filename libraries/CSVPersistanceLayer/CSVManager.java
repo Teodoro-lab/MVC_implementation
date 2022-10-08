@@ -1,4 +1,4 @@
-package CSVPersistanceLayer;
+package libraries.CSVPersistanceLayer;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -17,13 +17,13 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
 
-import abominableFramework.Model;
-import abominableFramework.ModelReflector;
-import abominableFramework.PersistenceManager;
+import libraries.abominableFramework.Model;
+import libraries.abominableFramework.ModelReflector;
+import libraries.abominableFramework.PersistenceManager;
 import models.Candidato;
 
 public class CSVManager implements PersistenceManager {
-    private String root = "db/";
+    private String root;
 
     private boolean fileAlredyCreated(String fileName) {
         File f = new File(fileName);
@@ -167,6 +167,14 @@ public class CSVManager implements PersistenceManager {
             e.printStackTrace();
         }
         System.out.println("CSV file was updated successfully !!!");
+    }
+
+    public String getRoot() {
+        return root;
+    }
+
+    public void setRoot(String root) {
+        this.root = root;
     }
 
 }

@@ -1,4 +1,4 @@
-package abominableFramework;
+package libraries.abominableFramework;
 
 public interface Subscriber {
 

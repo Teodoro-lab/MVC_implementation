@@ -1,4 +1,4 @@
-package abominableFramework;
+package libraries.abominableFramework;
 
 public abstract interface PersistenceManager {
 
@@ -13,5 +13,7 @@ public abstract interface PersistenceManager {
 	public Model[] getAll(Model model);
 
 	public abstract void parseModel();
+
+	public void setRoot(String root);
 
 }

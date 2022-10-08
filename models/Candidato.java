@@ -1,6 +1,6 @@
 package models;
 
-import abominableFramework.Model;
+import libraries.abominableFramework.Model;
 
 public class Candidato extends Model implements CandidatoDao {
     private String nombre;

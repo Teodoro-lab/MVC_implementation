@@ -1,4 +1,4 @@
-package abominableFramework;
+package libraries.abominableFramework;
 
 public abstract interface View extends Subscriber {
 
